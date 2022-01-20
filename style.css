@@ -99,6 +99,15 @@
   #greenmode:hover {
     color: rgb(78, 175, 148);
   }
+  header .navbar .bx-moon {
+    transform: rotate(360deg);
+    transition: .5s ease-in-out;
+  }
+  header .navbar .bx-sun {
+    transform: rotate(180deg);
+    transition: .5s ease-in-out;
+  }
+  
   .home {
     position: relative;
     width: 100%;
