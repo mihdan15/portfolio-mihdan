@@ -1,3 +1,14 @@
+//Preloader
+let loading = document.querySelector('#preloader')
+
+
+window.addEventListener('load', function(){
+    loading.style.display="none"
+})
+
+
+
+// Scroll
 let header = document.querySelector('header');
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar'); 

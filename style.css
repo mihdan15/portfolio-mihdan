@@ -51,6 +51,32 @@
     background: rgb(81 191 160);
     border-radius: 80px;
   }
+  #preloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffffa8;
+    z-index: 1001;
+  }
+  .loading {
+    width:70px;
+    height:70px;
+    border: solid 10px #ccc;
+    border-top-color: var(--button-color);
+    border-radius:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    z-index: 1002;
+    animation: putar 1.5s linear infinite;
+  }
+  @keyframes putar {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+  }
   header {
     position: fixed;
     width: 100%;
@@ -135,6 +161,8 @@
       color: var(--text-color);
       font-size: 25px;
       font-weight: 400;
+      overflow: hidden;
+      height: 40px;
     }
   .wrapper .dynamic-text {
       margin-left: 15px;
@@ -218,11 +246,6 @@
     border-radius: 8px;
     margin-left: 100px;
     margin-top: 0px;
-  }
-
-  .about-img .maps iframe{
-    border-radius: 8px;
-    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
   }
 
 
@@ -502,10 +525,11 @@
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 40px;
     padding: auto;
     margin: auto;
+    text-align: left;
   }
 
   .alert i:hover {
@@ -622,6 +646,16 @@
       display: flex;
       justify-content: center;
     }
+
+  }
+  @media (max-width: 441px) {
+    .alert {
+      width: auto;
+    }
+    .alert span {
+      font-size: .8rem;
+    }
+
   }
   @media (max-width: 340px) {
     :root {
@@ -644,7 +678,8 @@
     .portfolio-content {
       grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     }
-    .contact-form form {
+    .contact-form form,
+    .alert {
       width: auto;
     }
     .btn {
