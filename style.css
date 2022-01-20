@@ -124,14 +124,15 @@
   }
 
   #greenmode:hover {
-    color: rgb(78, 175, 148);
+    /* color: rgb(78, 175, 148); */
+    color: var(--skill-color);
   }
   header .navbar .bx-moon {
     transform: rotate(360deg);
     transition: .5s ease-in-out;
   }
   header .navbar .bx-sun {
-    transform: rotate(180deg);
+    transform: rotate(720deg);
     transition: .5s ease-in-out;
   }
   
@@ -243,10 +244,10 @@
     margin-top: 32px;
   }
   .about-img img {
-    width: 65%;
+    width: 90%;
     border-radius: 8px;
-    margin-left: 100px;
-    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 30px;
   }
 
 
@@ -300,6 +301,13 @@
     font-weight: 400;
     text-align: justify;
   }
+  .about-text p a {
+    color: rgb(180, 175, 175);
+    
+  }
+  .about-text p a:hover {
+    color: rgb(153, 152, 152);
+  }
   .information {
     margin: 16px 0 22.4px;
   }
@@ -328,6 +336,7 @@
       padding: 15px 20px;
       border-radius: 25px 25px 25px 25px;
       box-shadow: 3px 3px 3px rgb(104 172 154 / 25%);
+      background-color: rgba(233, 231, 231, 0.089);
   }
   
   .skills-container .skill .bx {
@@ -339,10 +348,9 @@
       width: 50%;
 
   }
-
-  
   .skills-container .skill h2 {
-      font-size: 16px;
+      font-size: 1rem;
+      font-weight: bold;
       margin: 12px 0 8px;
   }
   .skills-container .skill:hover{
@@ -650,11 +658,20 @@
 
   }
   @media (max-width: 441px) {
+    :root {
+      --p-font: 13px;
+    }
     .alert {
       width: auto;
     }
     .alert span {
       font-size: .8rem;
+    }
+    p {
+      font-size: var(--p-font);
+    }
+    .skills-container {
+      grid-template-columns: 2fr;
     }
 
   }

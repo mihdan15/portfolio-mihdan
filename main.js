@@ -43,11 +43,28 @@ darkmode.onclick = () => {
     if(darkmode.classList.contains('bx-moon')){
         darkmode.classList.replace('bx-moon','bx-sun');
         document.body.classList.add('active');
+        localStorage.setItem('theme', 'green')
     }else{
         darkmode.classList.replace('bx-sun','bx-moon');
-        document.body.classList.remove('active');
+        document.body.classList.remove('active');        
+        localStorage.removeItem('theme')
+
     }
 }
+
+//simpan konf tema ke local storage
+
+if(localStorage.getItem('theme') == 'green') {
+    darkmode.classList.replace('bx-moon','bx-sun');
+    document.body.classList.add('active');
+}else{
+    darkmode.classList.replace('bx-sun','bx-moon');
+    document.body.classList.remove('active');        
+}
+
+
+
+
 
 //Contact Form
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwDz_j7umlRMjKnAhHTncAuJz08YP-hQWvEImYVuW_yo0OWYr569lEm3lmvRg36XCnM/exec'
