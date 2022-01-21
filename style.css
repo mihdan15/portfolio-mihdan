@@ -337,31 +337,35 @@
       padding: 15px 20px;
       border-radius: 25px 25px 25px 25px;
       box-shadow: 3px 3px 3px rgb(104 172 154 / 25%);
-      background-color: rgba(233, 231, 231, 0.089);
+      /* background-color: rgba(233, 231, 231, 0.089); */
+      background-color: #1c2844;
   }
   
   .skills-container .skill .bx {
-      padding: 10px;
       color: #fff;
       font-size: 20px;
-      background: #1c2844;
       border-radius: 4px;
-      width: 50%;
+      background-color: transparent !important;
+
 
   }
   .skills-container .skill h2 {
+      color: #fff;
       font-size: 1rem;
       font-weight: bold;
       margin: 12px 0 8px;
+      border-radius: 4px;
+      background-color: transparent !important;
   }
   .skills-container .skill:hover{
-      background: #78bfab;
+      background: #fff;
       color: #fff;
       transition: 0.2s;
+      transform: scale(1.03);
   }
+  .skills-container .skill:hover h2,
   .skills-container .skill:hover .bx{
-      background: #fff;
-      color: #3c7a6d;
+      color: #021d17;
       transition: 0.2s;
   }
   .services-content {

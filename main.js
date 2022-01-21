@@ -110,7 +110,7 @@ let btnTop = document.querySelector('.back-to-top')
 btnTop.style.display="none";  
 
 window.onscroll = () => {
-    if(document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
+    if(document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
         btnTop.style.display = "block";
     } else {
         btnTop.style.display = "none";
