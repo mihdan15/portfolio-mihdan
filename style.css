@@ -227,7 +227,7 @@
     border-radius: 8px;
   }
   .btn:hover {
-    background: rgb(45, 141, 114);
+    background: rgb(47, 143, 116);
   }
   .heading {
     text-align: center;
@@ -334,28 +334,23 @@
   }
   .skills-container .skill {
       text-align: center;
-      border: 2px solid var(--skill-color);
       padding: 15px 20px;
       border-radius: 25px 25px 25px 25px;
-      box-shadow: 3px 3px 3px rgb(104 172 154 / 25%);
-      /* background-color: rgba(233, 231, 231, 0.089); */
+      /* box-shadow: 3px 3px 3px rgb(104 172 154 / 25%); */
+      box-shadow: 0 3px 7px rgba(14, 55, 54, 0.205);
       background-color: #1c2844;
   }
   
   .skills-container .skill .bx {
       color: #fff;
       font-size: 20px;
-      border-radius: 4px;
       background-color: transparent !important;
-
-
   }
   .skills-container .skill h2 {
       color: #fff;
       font-size: 1rem;
       font-weight: bold;
       margin: 12px 0 8px;
-      border-radius: 4px;
       background-color: transparent !important;
   }
   .skills-container .skill:hover{
