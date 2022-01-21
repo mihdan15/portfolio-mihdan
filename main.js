@@ -103,3 +103,21 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 })
 
+
+//Scroll to top
+let btnTop = document.querySelector('.back-to-top')
+
+btnTop.style.display="none";  
+
+window.onscroll = () => {
+    if(document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
+        btnTop.style.display = "block";
+    } else {
+        btnTop.style.display = "none";
+    }
+}
+
+btnTop.onclick = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

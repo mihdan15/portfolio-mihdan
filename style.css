@@ -58,6 +58,7 @@
     background-color: #ffffffc4;
     z-index: 9998;
     position: fixed;
+    transition: .5s ease-out;
   }
   .loading {
     width:70px;
@@ -71,7 +72,7 @@
     right:0;
     bottom:0;
     margin:auto;
-    z-index: 9999;
+    z-index: 99999;
     animation: putar 1.3s linear infinite;
   }
   @keyframes putar {
@@ -545,17 +546,6 @@
     color: rgb(231, 226, 226);
     cursor: pointer;
   }
-  .footer {
-    display: grid;
-    place-items: center;
-    padding: 50px;
-    background: var(--main-color);
-    color: #fff;
-  }
-  .footer h2 {
-    font-size: var(--medium-font);
-    margin-bottom: 22.4px;
-  }
   .copyright {
     padding: 1px;
     background: rgb(78 175 148);
@@ -747,3 +737,25 @@
         border-left: 2px solid var(--text-color);
     }
 }    
+
+/* back to top */
+    #back-to-top {
+      background: rgb(62, 155, 129);
+      box-shadow: 0 3px 7px rgba(14, 55, 54, 0.226);
+      color:#ffffff;
+      padding:5px 8px;
+      font-size:24px;
+      border-radius: 2px;
+    }
+    .back-to-top {
+      position:fixed!important;
+      position:absolute;
+      bottom:0;
+      right:20px;
+      z-index:999;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    #back-to-top:hover {
+      background: rgb(56, 150, 123);
+    }
