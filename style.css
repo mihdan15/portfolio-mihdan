@@ -123,7 +123,6 @@
     font-size: 22px;
     cursor: pointer;
   }
-
   #greenmode:hover {
     /* color: rgb(78, 175, 148); */
     color: var(--skill-color);
@@ -151,6 +150,7 @@
   }
   .home-img img {
     width: 55%;
+    height: 55%;
   }
   .home-text .hello {
     font-size: 20px;
@@ -221,13 +221,13 @@
   }
   .btn {
     display: inline-block;
-    background: rgb(78 175 148);
+    background: rgb(56, 165, 134);
     color: #fff;
     padding: 12.8px 16px;
     border-radius: 8px;
   }
   .btn:hover {
-    background: rgb(66 191 156);
+    background: rgb(45, 141, 114);
   }
   .heading {
     text-align: center;
@@ -249,6 +249,7 @@
     border-radius: 8px;
     margin-left: 0px;
     margin-top: 30px;
+    height: 50%;
   }
 
 
@@ -294,7 +295,7 @@
   .social-media button.github {
       background: var(--button-color);
   }
-  .social-media button.devianart {
+  .social-media button.linkedin {
       background: var(--button-color);
   }  
   .about-text p {
