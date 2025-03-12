@@ -155,8 +155,8 @@
     <!-- Services -->
     <section class="services" id="services">
       <div class="heading">
-        <h2>Services</h2>
-        <span>My Services</span>
+        <h2>Skills</h2>
+        <span>My Skills</span>
       </div>
       <div class="services-content">
         <!-- Box 1 -->
@@ -181,6 +181,16 @@
             >Learn More</a
           >
         </div>
+        <div class="services-box">
+          <i class="bx bx-brush"></i>
+          <h3>Machine<br />Learning</h3>
+          <a
+            href="https://drive.google.com/file/d/1XEmOmY4awfzh_RktNX3WyNS_RrZV7OFK/view?usp=sharing"
+            target="_blank"
+            aria-label="Design"
+            >Learn More</a
+          >
+        </div>
       </div>
     </section>
     <!-- Portfolio -->
@@ -189,130 +199,15 @@
         <h2>Portfolio</h2>
         <span>Recent Work</span>
       </div>
-      <div class="portfolio-container">
-        <!-- Tools -->
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/tools.png" alt="Tools Mihdan Advani" />
-          </div>
-          <div class="content">
-            <a
-              href="https://tools.mihdanadvani.my.id/"
-              target="_blank"
-              aria-label="Tools by Mihdan Advani"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-            <h3 style="margin-bottom: 0">Website Mihdan Tools</h3>
-            <h3 style="margin-top: 0; font-weight: lighter">2025</h3>
-          </div>
-        </div>
-        <!-- Sentiment -->
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/klasifikasi.png" alt="Klasifikasi Sentiment" />
-          </div>
-          <div class="content">
-            <a
-              href="https://klasifikasi-sentiment.mihdanadvani.my.id/"
-              target="_blank"
-              aria-label="Klasifikasi Sentiment"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-            <h3 style="margin-bottom: 0">Klasifikasi Sentiment</h3>
-            <h3 style="margin-top: 0; font-weight: lighter">2024</h3>
-          </div>
-        </div>
-        <!-- Mihdan Links -->
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/link.png" alt="Mihdan Links" />
-          </div>
-          <div class="content">
-            <a
-              href="https://linku.mihdanadvani.my.id/"
-              target="_blank"
-              aria-label="Website Kumpulan Link Mihdan Advani"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-            <h3 style="margin-bottom: 0">Mihdan Link</h3>
-            <h3 style="margin-top: 0; font-weight: lighter">2023</h3>
-          </div>
-        </div>
-        <!-- BFTX -->
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/bftx.png" alt="BFTX Links AI" />
-          </div>
-          <div class="content">
-            <a
-              href="https://bftx-links.netlify.app/"
-              target="_blank"
-              aria-label="Website links AI BFTX"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-            <h3 style="margin-bottom: 0">BFTX Links</h3>
-            <h3 style="margin-top: 0; font-weight: lighter">2023</h3>
-          </div>
-        </div>
-        <!-- TheatriQ -->
-        <div class="box">
-          <div class="box-img">
-            <img
-              src="./img/theatriq.png"
-              alt="Website Pembelian Tiket Bioskop (Tugas Matkul)"
-            />
-          </div>
-          <div class="content">
-            <a
-              href="https://github.com/mihdan15/TheatriQ"
-              target="_blank"
-              aria-label="Website Pembelian Tiket Bioskop (Tugas Matkul)"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-            <h3 style="margin-bottom: 0">TheatriQ Web App</h3>
-            <h3 style="margin-top: 0; font-weight: lighter">2023</h3>
-          </div>
-        </div>
-        <!-- Jelajah Kota -->
-        <div class="box">
-          <div class="box-img">
-            <img
-              src="./img/jelajah.png"
-              alt="Website Jelajah Kota (Tugas Matkul)"
-            />
-          </div>
-          <div class="content">
-            <a
-              href="https://github.com/mihdan15/jelajah-kota"
-              target="_blank"
-              aria-label="Website Jelajah Kota (Tugas Matkul)"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-            <h3 style="margin-bottom: 0">Jelajah Kota Web App</h3>
-            <h3 style="margin-top: 0; font-weight: lighter">2023</h3>
-          </div>
-        </div>
-        <!-- Barangku -->
-        <div class="box">
-          <div class="box-img">
-            <img
-              src="./img/barang.png"
-              alt="Aplikasi Inventory Barang Ku (Tugas Matkul)"
-            />
-          </div>
-          <div class="content">
-            <a
-              href="https://github.com/mihdan15/BarangKu"
-              target="_blank"
-              aria-label="Aplikasi Inventory Barang Ku (Tugas Matkul)"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-            <h3 style="margin-bottom: 0">Barang Ku</h3>
-            <h3 style="margin-top: 0; font-weight: lighter">2023</h3>
-          </div>
-        </div>
+      <div class="filter-buttons">
+        <button data-filter="*">All</button>
+        <button data-filter=".web">Web</button>
+        <button data-filter=".design">Design</button>
+        <button data-filter=".app">App</button>
+      </div>
+      <div class="portfolio-container" id="lightbox">
         <!-- IPM -->
-        <div class="box">
+        <div class="box web">
           <div class="box-img">
             <img src="./img/coba.jpg" alt="Website Resmi Pimpinan Pusat IPM" />
           </div>
@@ -329,7 +224,7 @@
           </div>
         </div>
         <!-- TosChat -->
-        <div class="box">
+        <div class="box app">
           <div class="box-img">
             <img src="./img/toschat.jpg" alt="TosChat App" />
           </div>
@@ -345,7 +240,7 @@
           </div>
         </div>
         <!-- YumasNida -->
-        <div class="box">
+        <div class="box web">
           <div class="box-img">
             <img src="./img/yumas.jpg" alt="YumasNida Corp" />
           </div>
@@ -358,7 +253,7 @@
           </div>
         </div>
         <!-- landing page buble -->
-        <div class="box">
+        <div class="box web">
           <div class="box-img">
             <img
               src="./img/landing page 2.webp"
@@ -378,7 +273,7 @@
           </div>
         </div>
         <!-- website pemdes sukamaju -->
-        <div class="box">
+        <div class="box web">
           <div class="box-img">
             <img src="./img/sukamaju.webp" alt="Website Pemdes Sukamaju" />
           </div>
@@ -394,7 +289,7 @@
           </div>
         </div>
         <!-- landing page e commerce bootstrap -->
-        <div class="box">
+        <div class="box web">
           <div class="box-img">
             <img
               src="./img/landing page 1.webp"
@@ -414,7 +309,7 @@
           </div>
         </div>
         <!-- unsplash clone -->
-        <div class="box">
+        <div class="box web">
           <div class="box-img">
             <img src="./img/unsplash.webp" alt="Unsplash Clone" />
           </div>
@@ -430,7 +325,7 @@
           </div>
         </div>
         <!-- web classy hijab -->
-        <div class="box">
+        <div class="box web">
           <div class="box-img">
             <img src="./img/classy.webp" alt="Classy Hijab" />
           </div>
@@ -445,7 +340,7 @@
           </div>
         </div>
         <!-- e commerce clone -->
-        <div class="box">
+        <div class="box web">
           <div class="box-img">
             <img src="./img/ecommerce.webp" alt="E-Commerce" />
           </div>
@@ -459,7 +354,7 @@
           </div>
         </div>
         <!-- ig template  -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/templ.webp" alt="Instagram Template" />
           </div>
@@ -469,7 +364,7 @@
           </div>
         </div>
         <!-- ig template  -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/templ 2.webp" alt="Instagram Template" />
           </div>
@@ -479,7 +374,7 @@
           </div>
         </div>
         <!-- ig template  -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/templ 3a.webp" alt="Instagram Template" />
           </div>
@@ -489,7 +384,7 @@
           </div>
         </div>
         <!-- CV Mihdan  -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/cv.webp" alt="Cv Mihdan" />
           </div>
@@ -504,7 +399,7 @@
           </div>
         </div>
         <!-- Poster Cyberbullying  -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/poster 1.webp" alt="Poster Cyberbullying" />
           </div>
@@ -520,7 +415,7 @@
           </div>
         </div>
         <!-- Poster Game Online -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/poster 2.webp" alt="Poster Game Online" />
           </div>
@@ -536,7 +431,7 @@
           </div>
         </div>
         <!-- poster workshop dg clan -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img
               src="./img/poster 3.webp"
@@ -556,7 +451,7 @@
           </div>
         </div>
         <!-- logo lapper blk -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/logo identity lapper.webp" alt="Lapper" />
           </div>
@@ -572,7 +467,7 @@
           </div>
         </div>
         <!-- bkso malang blk -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/poster 4.webp" alt="Bakso Malang" />
           </div>
@@ -588,7 +483,7 @@
           </div>
         </div>
         <!-- lomba foto nasional -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/lomba foto.webp" alt="Lomba Foto Nasional" />
           </div>
@@ -604,7 +499,7 @@
           </div>
         </div>
         <!-- poster konser online cinta yang membumi -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/pbk.webp" alt="Poster Cinta Yang Membumi" />
           </div>
@@ -621,7 +516,7 @@
           </div>
         </div>
         <!-- jatim fair milad jatim -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/jatim fair.webp" alt="Jatim Fair" />
           </div>
@@ -637,7 +532,7 @@
           </div>
         </div>
         <!-- Ayam Geprek -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/ayam geprek.webp" alt="Ayam Geprek" />
           </div>
@@ -653,7 +548,7 @@
           </div>
         </div>
         <!-- kalender 2030 -->
-        <div class="box">
+        <div class="box design">
           <div class="box-img">
             <img src="./img/kalender.webp" alt="Kalender 2030" />
           </div>
@@ -670,218 +565,8 @@
         </div>
       </div>
     </section>
-    <!-- Skills -->
-    <section class="skills" id="skills">
-      <div class="heading">
-        <h1>Skills</h1>
-        <span>My Skills</span>
-      </div>
-      <div class="skills-container">
-        <!--HTML-->
-        <div class="skill">
-          <i class="bx bxl-html5"></i>
-          <h2>HTML5</h2>
-        </div>
-        <!--CSS-->
-        <div class="skill">
-          <i class="bx bxl-css3"></i>
-          <h2>CSS3</h2>
-        </div>
-        <!--Bootstrap-->
-        <div class="skill">
-          <i class="bx bxl-bootstrap"></i>
-          <h2>Bootstrap</h2>
-        </div>
-        <!--JavaScript-->
-        <div class="skill">
-          <i class="bx bxl-javascript"></i>
-          <h2>JavaScript</h2>
-        </div>
-        <!--JQuery-->
-        <div class="skill">
-          <i class="bx bxl-jquery"></i>
-          <h2>JQuery</h2>
-        </div>
-        <!--Java-->
-        <div class="skill">
-          <i class="bx bxl-java"></i>
-          <h2>Java</h2>
-        </div>
-        <!--Microsoft Office-->
-        <div class="skill">
-          <i class="bx"
-            ><span class="iconify" data-icon="mdi:microsoft-office"></span
-          ></i>
-          <h2>Microsoft Office</h2>
-        </div>
-        <!--Laravel-->
-        <div class="skill">
-          <i class="bx fab fa-laravel"
-            ><span class="iconify" data-icon="cib:laravel"></span
-          ></i>
-          <h2>Laravel</h2>
-        </div>
-        <!-- Vue JS -->
-        <div class="skill">
-          <i class="bx bxl-vuejs"></i>
-          <h2>Vue Js</h2>
-        </div>
-        <!-- Vuetify -->
-        <div class="skill">
-          <i class="bx"
-            ><span class="iconify" data-icon="mdi:vuetify"></span
-          ></i>
-          <h2>Vuetify</h2>
-        </div>
-        <!-- My Sql -->
-        <div class="skill">
-          <i class="bx"><span class="iconify" data-icon="cib:mysql"></span></i>
-          <h2>My Sql</h2>
-        </div>
-        <!-- PHP -->
-        <div class="skill">
-          <i class="bx bxl-php"></i>
-          <h2>PHP</h2>
-        </div>
-        <!-- figma -->
-        <div class="skill">
-          <i class="bx bxl-figma"></i>
-          <h2>Figma</h2>
-        </div>
-        <!-- corel -->
-        <div class="skill">
-          <i class="bx"
-            ><span class="iconify" data-icon="file-icons:coreldraw"></span
-          ></i>
-          <h2>Corel Draw</h2>
-        </div>
-        <!-- photoshop -->
-        <div class="skill">
-          <i class="bx"
-            ><span class="iconify" data-icon="file-icons:adobe-photoshop"></span
-          ></i>
-          <h2>Photoshop</h2>
-        </div>
-        <!-- UI UX -->
-        <div class="skill">
-          <i class="bx bx-vector"></i>
-          <h2>UI UX Designer</h2>
-        </div>
-      </div>
-
-      <!-- certificate -->
-      <div class="heading" style="margin-bottom: 30px; margin-top: 30px">
-        <span>Certificate</span>
-      </div>
-      <div class="portfolio-container">
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/sert 1.webp" alt="Sertifikat 1" />
-          </div>
-          <div class="content">
-            <a
-              href="https://member.pksdigitalschool.id/sertifikat/generate/ae12ce46-5670-4285-828c-ec3600681d57"
-              target="_blank"
-              aria-label="Sertifikat 1"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/sert 2.webp" alt="Sertifikat 2" />
-          </div>
-          <div class="content">
-            <a
-              href="https://www.dicoding.com/certificates/72ZDEREEQPYW"
-              target="_blank"
-              aria-label="Sertifikat 2"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/sert 3.webp" alt="Sertifikat 3" />
-          </div>
-          <div class="content">
-            <a
-              href="https://www.dicoding.com/certificates/MEPJLGVG4Z3V"
-              target="_blank"
-              aria-label="Sertifikat 3"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/sert 4.webp" alt="Sertifikat 4" />
-          </div>
-          <div class="content">
-            <a
-              href="https://www.udemy.com/certificate/UC-6b2e50e6-af05-4e88-977b-ff9a54205ea5/"
-              target="_blank"
-              aria-label="Sertifikat 4"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/bdt.jpg" alt="Sertifikat 5" />
-          </div>
-          <div class="content">
-            <a
-              href="https://bit.ly/3Zty4as"
-              target="_blank"
-              aria-label="Sertifikat 5"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/jarkom.jpg" alt="Sertifikat 6" />
-          </div>
-          <div class="content">
-            <a
-              href="https://www.dicoding.com/certificates/07Z6G3RK2XQR/"
-              target="_blank"
-              aria-label="Sertifikat 6"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/sert 7.webp" alt="Sertifikat 7" />
-          </div>
-          <div class="content">
-            <a
-              href="https://drive.google.com/file/d/1BYq2sA4gPQP0Jf21nbfl_gcyEncAe1UL/view?usp=sharing"
-              target="_blank"
-              aria-label="Sertifikat 7"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./img/devops.jpg" alt="Sertifikat 8" />
-          </div>
-          <div class="content">
-            <a
-              href="https://www.dicoding.com/certificates/JMZVNEGMNPN9"
-              target="_blank"
-              aria-label="Sertifikat 8"
-              ><i class="bi bi-link-45deg"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Contact -->
-    <!-- <section class="contact" id="contact">
+    <section class="contact" id="contact">
       <div class="heading" style="margin-bottom: 20px">
         <h2>Contact</h2>
         <span>Connect With Me</span>
@@ -914,41 +599,6 @@
           </button>
         </form>
       </div>
-    </section> -->
-
-    <section class="contact" id="contact">
-      <div class="heading" style="margin-bottom: 20px">
-        <h2>Contact</h2>
-        <span>Connect With Me</span>
-      </div>
-      <!-- <div class="alert">
-        <span><b>Terimakasih!, </b>Pesan Telah Kami Terima</span>
-        <i class="bi bi-x-lg close"></i>
-      </div> -->
-      <div class="contact-form">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="nama" placeholder="Your Name" required />
-          <input
-            type="email"
-            name="email"
-            id=""
-            placeholder="Enter Your Mail"
-            required
-          />
-          <textarea
-            name="pesan"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Write Message Here..."
-            required
-          ></textarea>
-          <button type="submit" class="send-btn">Kirim</button>
-          <!-- <button type="submit" class="dis-btn" disabled>
-            <img src="img/load.gif" alt="" class="load" />
-          </button> -->
-        </form>
-      </div>
     </section>
     <!-- btt -->
     <div class="back-to-top">
@@ -964,6 +614,20 @@
     <!-- Link To JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
-    <script src="main.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+      integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script type="text/javascript" src="assets/jquery.1.11.1.js"></script>
+    <!-- <script type="text/javascript" src="assets/jquery.isotope.js"></script> -->
+    <script src="/assets/main.js"></script>
   </body>
 </html>
